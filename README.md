@@ -1,96 +1,85 @@
-# astro-alliancetsk1
+# 🚀 NASA APOD Gallery
 
+A responsive web gallery that fetches and displays space images using NASA's Astronomy Picture of the Day (APOD) API.
 
-A responsive web gallery that fetches and displays space images using NASA’s Astronomy Picture of the Day (APOD) API.
+---
 
-🌌 About the Project
+## 📌 Overview
 
-This project is a simple and responsive NASA image gallery built using HTML, CSS, and JavaScript.
-It dynamically fetches space images from the NASA APOD API and displays them in a grid layout.
+This project is built using HTML, CSS, and JavaScript.  
+It dynamically fetches 10 random space images from NASA’s APOD API and displays them in a responsive grid layout.
 
-The goal of this project is to practice:
+The main purpose of this project is to practice:
+- API integration using Fetch
+- DOM manipulation
+- Responsive design with CSS Grid
+- Clean UI development
 
-API integration
+---
 
-Fetching and handling JSON data
+## 🛠️ Tech Stack
 
-DOM manipulation
+- HTML5
+- CSS3 (Flexbox & Grid)
+- JavaScript (Fetch API)
+- NASA APOD API
 
-Responsive layout using CSS Grid
+---
 
-Clean UI design with CSS variables
-
-🛠️ Technologies Used
-
-HTML5
-
-CSS3 (Flexbox + Grid)
-
-JavaScript (Fetch API)
-
-NASA APOD API
-
-🔗 API Used
-
-NASA Astronomy Picture of the Day (APOD) API
-Endpoint used:
+## 🔗 API Endpoint
 
 https://api.nasa.gov/planetary/apod?api_key=YOUR_API_KEY&count=10
 
-You can get your free API key from:
-👉 https://api.nasa.gov/
+You can generate your free API key from:
+https://api.nasa.gov/
 
-✨ Features
+---
 
-Sticky navigation bar
+## ✨ Features
 
-Smooth scroll behavior
+- Sticky navigation bar
+- Smooth scrolling
+- Responsive hero section
+- Dynamic image gallery
+- Hover animations
+- Modern dark theme UI
 
-Responsive hero section
+---
 
-Dynamic image gallery (fetched from API)
+## 📂 Project Structure
 
-Hover animations
-
-Clean dark-themed UI
-
-"See all images" button (UI ready for expansion)
-
-📂 Project Structure
-📁 NASA-Gallery
+NASA-APOD-Gallery/
 │── index.html
 │── style.css
 │── app.js
 │── README.md
-⚙️ How to Run the Project
 
-Clone the repository:
+---
 
-git clone https://github.com/your-username/nasa-gallery.git
+## ⚙️ How to Run
 
-Open the project folder.
+1. Clone the repository:
+   git clone https://github.com/your-username/nasa-apod-gallery.git
 
-Replace the API key in app.js with your own NASA API key.
+2. Open the project folder.
 
-Open index.html in your browser.
+3. Replace the API key in app.js with your own NASA API key.
 
-That’s it 🚀
+4. Open index.html in your browser.
 
-📸 Future Improvements
+---
 
-Add loading animation
+## 🚀 Future Improvements
 
-Add error handling
+- Add loading animation
+- Add proper error handling
+- Add modal for full-size image view
+- Add date filter option
+- Improve accessibility
 
-Add modal view for full-size images
+---
 
-Add pagination
+## 👨‍💻 Author
 
-Filter by date
-
-Add search functionality
-
-👨‍💻 Author
-
-Mayank Raj
-Aspiring Web Developer | Passionate about Space & Tech
+Mayank Raj  
+Web Developer | Space Enthusiast

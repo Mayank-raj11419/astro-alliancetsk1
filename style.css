@@ -1,0 +1,295 @@
+:root {
+    --primary: #A8FF53;
+    --secondary: #7655fd;
+    --secondary-hover: #826dff;
+    --secondary-800: #1b133c;
+    --secondary-700: #2d2063;
+    --secondary-600: #453099;
+    --secondary-500: #5139b1;
+    --secondary-400: #987eff;
+    --text-bright: #E8E9EC;
+    --text-dimmed: #878C99;
+    --grid-dimmed: #1C1E21;
+    --text-light-dimmed: #A4A8B0;
+    --charcoal-100: #E8E9EC;
+    --charcoal-200: #D7D9DD;
+    --charcoal-300: #B5B8C0;
+    --charcoal-400: #878C99;
+    --charcoal-500: #5F6570;
+    --charcoal-600: #3B3E45;
+    --charcoal-700: #272A2E;
+    --charcoal-800: #1A1B1F;
+    --charcoal-850: #15171A;
+    --aqua-100: #DDEEFC;
+    --aqua-500: #479DEC;
+
+
+
+    --nav-bar-width: calc(60vw);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    scrollbar-width: none;
+
+    /* outline: 1px solid red; */
+    }
+
+a {
+    text-decoration: none;  
+    color: inherit;          
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+section{
+    width: 100%;
+}
+
+
+/* nav  */
+
+
+.header {
+    background-color: var(--charcoal-800);
+
+    color: var(--charcoal-100);
+
+
+    position: sticky;
+    top: 0px;
+
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0px 10px;
+
+    padding: 10px 2px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: var(--nav-bar-width);
+
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+.header-logo {
+    color: var(--primary);
+
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.nav li:hover {
+    color: var(--primary);
+}
+
+
+/* home/hero */
+
+
+.home{
+    background-color: var(--charcoal-850);
+    color: var(--charcoal-100);
+
+    height: calc(100vw * 0.6);
+    min-height: 400px;
+    max-height: 99vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.home-main{
+    background-color: var(--charcoal-850);
+    color: var(--charcoal-100);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height:  calc(calc(100vw * 0.6) * 0.6666666666667);
+    min-height: 266.7px;
+    max-height: 66vh;
+
+    position: absolute;
+    bottom: 0;
+ 
+}
+
+.home-head{
+    font-size: clamp(25px, 5vw, 30px);
+
+    font-weight: bold;
+
+    padding: 0px 0px 15px 0px;
+}
+
+.home-cont{
+    font-size: clamp(15px, 2vw, 25px);
+
+    padding: 5px 0px 10px 0px;
+}
+
+.home-main-btm{
+    background-color: var(--primary);
+    color: var(--charcoal-850);
+
+    cursor: pointer;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    transition: 0.5s ease;
+}
+
+.btm-arrow{
+    display: inline-block;
+    scale: 0.9;
+    transition:transform 0.4s ease-in;
+}
+
+.home-main-btm:hover{
+    transform: scale(1.1);
+
+    background-color: #c1fe83;
+    
+}
+
+.home-main-btm:hover .btm-arrow{
+    transform: translateX(2px) scale(1.3);
+}
+
+
+/* img card  */
+
+
+.gallery{
+    background-color: var(--charcoal-800);
+    color: var(--charcoal-100);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 0px;
+
+    height: max-content;
+
+}
+
+.gallery-head{
+    font-size: clamp(20px, 3vw, 25px);
+    margin: 5px 0px;
+    color: var(--primary);
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    width: 100%;
+}
+
+.img-grid li img{
+    max-width:calc(33vw - 50px);
+
+}
+
+.img-grid li{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 5px;
+    
+    border: 1px solid var(--charcoal-850);
+    border-radius: 10px;
+
+    max-width:calc(33vw - 20px);
+    height: 97%;
+    
+
+    background-color: var(--charcoal-100);
+    color: var(--grid-dimmed);
+
+    transition: 0.65s ease;
+}
+
+
+.img-grid li span{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+
+.nasa-button{
+    margin: 20px;
+    padding: 5px 15px;
+
+    background-color: var(--primary);
+    color: var(--charcoal-850);
+
+    border-radius: 20px;
+
+    transition: 0.5s ease;
+
+    cursor: pointer;
+}
+
+.nasa-button:hover{
+    transform: scale(1.15);
+    background-color: rgb(210, 255, 189);
+}
+
+.img-grid li:hover{
+    transform: scale(1.05);
+}
+
+
+/* contact */
+
+.Contact{
+    height: 200px;
+    background-color: var(--charcoal-800);
+
+    color: var(--charcoal-100);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 0px;
+
+    
+}
+
